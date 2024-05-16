@@ -1,0 +1,8 @@
+{% extends '<core>index.html' %}
+
+{% block content %}
+<h1>{{ profile.user.username }}</h1>
+<p>{{ profile.bio }}</p>
+<img src="{{ profile.profile_picture.url }}" alt="Profile Picture">
+{% endblock %}
+
