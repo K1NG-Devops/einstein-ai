@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'parents', # Add the parents app to the list of installed apps
     'quizzes', # Add the quizzes app to the list of installed apps
     'students', # Add the students app to the list of installed apps
+    'teachers', # Add the teachers app to the list of installed apps
     
 ]
 

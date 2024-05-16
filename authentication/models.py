@@ -1,8 +1,9 @@
 from django.db import models
+from lessons.models import Lesson
 
 class UserProgress(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    lesson = models.ForeignKey('robots.Lesson', on_delete=models.CASCADE)
+    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
     completed = models.BooleanField(default=False)
     date_completed = models.DateTimeField(null=True, blank=True)
 
